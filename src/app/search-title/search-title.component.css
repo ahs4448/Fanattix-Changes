@@ -1,0 +1,14 @@
+.filters{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 3;
+    transition: all 0.2s ease-in-out;
+    width: 300px;
+    transform: translateX(-300px);
+}
+.closed{
+    transform: translateX(0);
+}

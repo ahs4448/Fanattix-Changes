@@ -1,0 +1,21 @@
+      <form [formGroup]="occurrenceForm" (submit)="submitForm()">
+            <span id="occurrence-left">
+              <div class="form-group">
+                
+                <label for="exampleInputPassword1">Starts</label>
+                <input formControlName="startDate" type="date" class="form-control" id="exampleInputPassword1" placeholder="Select a Date for your Event">
+      
+                <input formControlName="startTime" type="time" class="form-control" id="exampleInputPassword1" placeholder="Select a Date for your Event">
+              </div>
+            </span>
+            
+            <span id="occurrence-right">
+              <div class="form-group">          
+                <label for="exampleInputPassword1">Ends</label>
+                <input formControlName="endDate" type="date" class="form-control" id="exampleInputPassword1" placeholder="Select a Date for your Event">
+
+                <input formControlName="endTime" type="time" class="form-control" id="exampleInputPassword1" placeholder="Select a Date for your Event">
+              </div>
+            </span>
+          </form>       
+      <button style="margin-bottom: 15px;" class="btn b4" (click)="submitForm()">Save</button>

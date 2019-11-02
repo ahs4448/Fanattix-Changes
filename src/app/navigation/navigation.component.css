@@ -1,0 +1,29 @@
+.account-menu{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 400;
+    padding: 20px;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: white;
+}
+/* #navigation-right{
+    display: flex;
+    opacity: 0.2;
+} */
+.nav-logo{
+    padding-top: 5px;
+}
+#nav-img{ 
+    height: 20px;
+}
+
+#mm{
+    cursor:pointer;
+}

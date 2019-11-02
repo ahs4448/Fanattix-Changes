@@ -1,0 +1,28 @@
+<div id="ticket-stats" class="body-padding">
+  <div class="frame">
+    <div class="bit-1">
+      <h2>Your Event Stats</h2>
+      <h3 class="text-gray">{{event?.name}}</h3> 
+      <button style="margin: 0 0 15px !important" class="btn b3 btn-primary btn-sm" (click)="goToEdit(event?.id)">Edit</button>
+    
+        <div class="ticket-box">
+          <p style="margin-bottom: 0;">Total Tickets Sold
+          <br><small>{{event?.total_tickets_sold}}</small></p>
+        </div>
+        <h3>Ticket Options</h3>        
+       <div class="ticket-box" *ngFor="let option of event?.ticket_options">
+         <h3><small>{{option?.name}}</small></h3>
+         <p>Price<br><small>${{option?.price}}</small></p>
+         <p>Tickets Sold <br><small>{{option?.tickets_sold}}</small></p>
+         <p>Amount Sold <br><small>${{option?.dollar_amount_sold}}</small></p>
+       </div>
+    </div>
+       
+
+    <!--<div class="col-md-8 offset-md-2 my-3">        
+        <p>Messaging</p>
+        <app-event-alerts [eventId]="eventId"></app-event-alerts>
+    </div>-->
+    
+  </div>
+</div>
